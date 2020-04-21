@@ -1,0 +1,13 @@
+[
+    { "name": "Chest pain", "system": "Cardiovascular" },
+    { "name": "Palpitation", "system": "Cardiovascular" },
+    { "name": "Dyspnea", "system": "Cardiovascular" },
+    { "name": "Headache", "system": "Neurological" },
+    { "name": "Dizziness", "system": "Neurological" },
+    { "name": "Dysuria", "system": "Genitourinary" },
+    { "name": "Infertility", "system": "Genitourinary" },
+    { "name": "Premature ejaculation", "system": "Genitourinary" },
+    { "name": "Constipation", "system": "Gastrointestinal" },
+    { "name": "Diarrhea", "system": "Gastrointestinal" },
+    { "name": "Abdominal Pain", "system": "Gastrointestinal" },
+]
