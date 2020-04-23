@@ -15,19 +15,24 @@ class MasterViewController: UIViewController  {
     @IBOutlet var searchFooterBottomConstraint: NSLayoutConstraint!
     
     var symptoms: [Symptom] = []
-    let searchController = UISearchController(searchResultsController: nil)
     var filteredSymptoms : [Symptom] = []
+    
+    let searchController = UISearchController(searchResultsController: nil)
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         symptoms = Symptom.symptoms()
+        
         
         // 1
         searchController.searchResultsUpdater = self
         // 2
         searchController.obscuresBackgroundDuringPresentation = false
         // 3
-        searchController.searchBar.placeholder = "Search Symptoms"
+        searchController.searchBar.placeholder = "Search Conditions"
         // 4
         navigationItem.searchController = searchController
         // 5
@@ -44,10 +49,16 @@ class MasterViewController: UIViewController  {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        navigationItem.hidesSearchBarWhenScrolling = false
         
         if let indexPath = tableView.indexPathForSelectedRow {
             tableView.deselectRow(at: indexPath, animated: true)
         }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        navigationItem.hidesSearchBarWhenScrolling = true
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -81,7 +92,7 @@ class MasterViewController: UIViewController  {
         filteredSymptoms = symptoms.filter { (symptom: Symptom) -> Bool in
             
             let doesSystemMatch = system == .all || symptom.system == system
-
+            
             if isSearchBarEmpty {
                 return doesSystemMatch
             } else {
@@ -115,6 +126,7 @@ class MasterViewController: UIViewController  {
 }
 
 extension MasterViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if isFiltering {
             searchFooter.setIsFilteringToShow(filteredItemCount: filteredSymptoms.count, of: symptoms.count)

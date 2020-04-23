@@ -27,9 +27,9 @@ class DetailViewController: UIViewController {
     func configureView() {
         if let symptom = symptom,
             let detailDescriptionLabel = detailDescriptionLabel {
-            detailDescriptionLabel.text = symptom.system.rawValue + " System Complaint"
+            detailDescriptionLabel.text = symptom.name
             //title = symptom.system.rawValue
-            title = symptom.name
+            //title = symptom.name
         }
     }
 

@@ -1,13 +1,982 @@
 [
-    { "name": "Chest pain", "system": "Cardiovascular" },
-    { "name": "Palpitation", "system": "Cardiovascular" },
-    { "name": "Dyspnea", "system": "Cardiovascular" },
-    { "name": "Headache", "system": "Neurological" },
-    { "name": "Dizziness", "system": "Neurological" },
-    { "name": "Dysuria", "system": "Genitourinary" },
-    { "name": "Infertility", "system": "Genitourinary" },
-    { "name": "Premature ejaculation", "system": "Genitourinary" },
-    { "name": "Constipation", "system": "Gastrointestinal" },
-    { "name": "Diarrhea", "system": "Gastrointestinal" },
-    { "name": "Abdominal Pain", "system": "Gastrointestinal" },
+ {
+   "name": "Alcoholism",
+   "system": "Behavioral Medicine"
+ },
+ {
+   "name": "Anxiety",
+   "system": "Behavioral Medicine"
+ },
+ {
+   "name": "Depression",
+   "system": "Behavioral Medicine"
+ },
+ {
+   "name": "Grief",
+   "system": "Behavioral Medicine"
+ },
+ {
+   "name": "Psychosis",
+   "system": "Behavioral Medicine"
+ },
+ {
+   "name": "Psychosomatic Disorders",
+   "system": "Behavioral Medicine"
+ },
+ {
+   "name": "Smoking Cessation",
+   "system": "Behavioral Medicine"
+ },
+ {
+   "name": "Suicidal Patient",
+   "system": "Behavioral Medicine"
+ },
+ {
+   "name": "Acute Pulmonary Edema",
+   "system": "Cardiology"
+ },
+ {
+   "name": "Bradycardia",
+   "system": "Cardiology"
+ },
+ {
+   "name": "Cardiac Dyspnea",
+   "system": "Cardiology"
+ },
+ {
+   "name": "Claudication",
+   "system": "Cardiology"
+ },
+ {
+   "name": "Diastolic Murmurs",
+   "system": "Cardiology"
+ },
+ {
+   "name": "Hypertension",
+   "system": "Cardiology"
+ },
+ {
+   "name": "Hypotension",
+   "system": "Cardiology"
+ },
+ {
+   "name": "Narrow-complex Tachycardia",
+   "system": "Cardiology"
+ },
+ {
+   "name": "New Congestive Heart Failure",
+   "system": "Cardiology"
+ },
+ {
+   "name": "Palpitations",
+   "system": "Cardiology"
+ },
+ {
+   "name": "Post–Myocardial Infarction  Care",
+   "system": "Cardiology"
+ },
+ {
+   "name": "Right Ventricular Failure",
+   "system": "Cardiology"
+ },
+ {
+   "name": "Stable Angina",
+   "system": "Cardiology"
+ },
+ {
+   "name": "STEMI",
+   "system": "Cardiology"
+ },
+ {
+   "name": "Sudden Cardiac Death",
+   "system": "Cardiology"
+ },
+ {
+   "name": "Syncope",
+   "system": "Cardiology"
+ },
+ {
+   "name": "Systolic Murmurs",
+   "system": "Cardiology"
+ },
+ {
+   "name": "Unstable Angina / NSTEMI",
+   "system": "Cardiology"
+ },
+ {
+   "name": "Wide-complex Tachycardia",
+   "system": "Cardiology"
+ },
+ {
+   "name": "Generalized Pruritus",
+   "system": "Dermatology"
+ },
+ {
+   "name": "Leg Ulcer",
+   "system": "Dermatology"
+ },
+ {
+   "name": "Palpable Purpura",
+   "system": "Dermatology"
+ },
+ {
+   "name": "Pigmented Lesions",
+   "system": "Dermatology"
+ },
+ {
+   "name": "Urticaria",
+   "system": "Dermatology"
+ },
+ {
+   "name": "Acute Pulseless Extremity",
+   "system": "Emergency Medicine"
+ },
+ {
+   "name": "Caustic Ingestion & Exposure",
+   "system": "Emergency Medicine"
+ },
+ {
+   "name": "Foreign Body Ingestion",
+   "system": "Emergency Medicine"
+ },
+ {
+   "name": "Hypothermia",
+   "system": "Emergency Medicine"
+ },
+ {
+   "name": "Mammal Bites",
+   "system": "Emergency Medicine"
+ },
+ {
+   "name": "Snake Venom Poisoning",
+   "system": "Emergency Medicine"
+ },
+ {
+   "name": "Submersion",
+   "system": "Emergency Medicine"
+ },
+ {
+   "name": "Adrenal Incidentaloma",
+   "system": "Endocrinology"
+ },
+ {
+   "name": "Cushing’s Syndrome",
+   "system": "Endocrinology"
+ },
+ {
+   "name": "Goiter",
+   "system": "Endocrinology"
+ },
+ {
+   "name": "Gynecomastia",
+   "system": "Endocrinology"
+ },
+ {
+   "name": "Hirsutism",
+   "system": "Endocrinology"
+ },
+ {
+   "name": "Hypercalcemia",
+   "system": "Endocrinology"
+ },
+ {
+   "name": "Hyperglycemia",
+   "system": "Endocrinology"
+ },
+ {
+   "name": "Hyperthyroidism",
+   "system": "Endocrinology"
+ },
+ {
+   "name": "Hypocalcemia",
+   "system": "Endocrinology"
+ },
+ {
+   "name": "Hypoglycemia",
+   "system": "Endocrinology"
+ },
+ {
+   "name": "Hypothyroidism",
+   "system": "Endocrinology"
+ },
+ {
+   "name": "Pituitary Tumor",
+   "system": "Endocrinology"
+ },
+ {
+   "name": "Sick Euthyroid Syndrome",
+   "system": "Endocrinology"
+ },
+ {
+   "name": "Tests of Thyroid Function",
+   "system": "Endocrinology"
+ },
+ {
+   "name": "Thyroid Function in Nonthyroidal Illness",
+   "system": "Endocrinology"
+ },
+ {
+   "name": "Thyroid Nodule",
+   "system": "Endocrinology"
+ },
+ {
+   "name": "Thyroid Pain",
+   "system": "Endocrinology"
+ },
+ {
+   "name": "Acute Abdominal Pain",
+   "system": "Gastroenterology"
+ },
+ {
+   "name": "Acute Diarrhea",
+   "system": "Gastroenterology"
+ },
+ {
+   "name": "Anorectal Pain",
+   "system": "Gastroenterology"
+ },
+ {
+   "name": "Anorexia",
+   "system": "Gastroenterology"
+ },
+ {
+   "name": "Ascites",
+   "system": "Gastroenterology"
+ },
+ {
+   "name": "Asymptomatic abnormal Liver aminotransferases",
+   "system": "Gastroenterology"
+ },
+ {
+   "name": "Belching",
+   "system": "Gastroenterology"
+ },
+ {
+   "name": "Biliary Colic",
+   "system": "Gastroenterology"
+ },
+ {
+   "name": "Chronic Abdominal Pain",
+   "system": "Gastroenterology"
+ },
+ {
+   "name": "Chronic Diarrhea",
+   "system": "Gastroenterology"
+ },
+ {
+   "name": "Constipation",
+   "system": "Gastroenterology"
+ },
+ {
+   "name": "Dyspepsia",
+   "system": "Gastroenterology"
+ },
+ {
+   "name": "Dysphagia",
+   "system": "Gastroenterology"
+ },
+ {
+   "name": "Elevated Serum Amylase",
+   "system": "Gastroenterology"
+ },
+ {
+   "name": "Elevated Serum Iron",
+   "system": "Gastroenterology"
+ },
+ {
+   "name": "Fecal Incontinence",
+   "system": "Gastroenterology"
+ },
+ {
+   "name": "Flatulence",
+   "system": "Gastroenterology"
+ },
+ {
+   "name": "Gastrointestinal Bleeding",
+   "system": "Gastroenterology"
+ },
+ {
+   "name": "Heartburn",
+   "system": "Gastroenterology"
+ },
+ {
+   "name": "Irritable Bowel Syndrome",
+   "system": "Gastroenterology"
+ },
+ {
+   "name": "Jaundice",
+   "system": "Gastroenterology"
+ },
+ {
+   "name": "Nausea & Vomiting",
+   "system": "Gastroenterology"
+ },
+ {
+   "name": "Noncardiac Chest Pain",
+   "system": "Gastroenterology"
+ },
+ {
+   "name": "Positive Fecal Occult Blood Test (fobt)",
+   "system": "Gastroenterology"
+ },
+ {
+   "name": "Rectal Bleeding",
+   "system": "Gastroenterology"
+ },
+ {
+   "name": "Chronic Pain",
+   "system": "General Medicine"
+ },
+ {
+   "name": "Edema",
+   "system": "General Medicine"
+ },
+ {
+   "name": "Fatigue",
+   "system": "General Medicine"
+ },
+ {
+   "name": "Involuntary Weight Loss",
+   "system": "General Medicine"
+ },
+ {
+   "name": "Obesity",
+   "system": "General Medicine"
+ },
+ {
+   "name": "Persistent Excessive Sweating",
+   "system": "General Medicine"
+ },
+ {
+   "name": "Preoperative Evaluation",
+   "system": "General Medicine"
+ },
+ {
+   "name": "Prevention & Screening",
+   "system": "General Medicine"
+ },
+ {
+   "name": "Sexual Dysfunction",
+   "system": "General Medicine"
+ },
+ {
+   "name": "Falls in Geriatric Patients",
+   "system": "Geriatrics"
+ },
+ {
+   "name": "Geriatric Functional Assessment",
+   "system": "Geriatrics"
+ },
+ {
+   "name": "Abnormal Pap Smear",
+   "system": "Gynaecology"
+ },
+ {
+   "name": "Abnormal Vaginal Bleeding",
+   "system": "Gynaecology"
+ },
+ {
+   "name": "Acute Abdominal Pain in Women",
+   "system": "Gynaecology"
+ },
+ {
+   "name": "Adjuvant Therapy Choices in Breast Cancer",
+   "system": "Gynaecology"
+ },
+ {
+   "name": "Breast Mass",
+   "system": "Gynaecology"
+ },
+ {
+   "name": "Cervicitis",
+   "system": "Gynaecology"
+ },
+ {
+   "name": "Chest Pain in Women",
+   "system": "Gynaecology"
+ },
+ {
+   "name": "Contraceptive Choices",
+   "system": "Gynaecology"
+ },
+ {
+   "name": "Domestic Violence",
+   "system": "Gynaecology"
+ },
+ {
+   "name": "Ectopic Pregnancy",
+   "system": "Gynaecology"
+ },
+ {
+   "name": "Female Infertility",
+   "system": "Gynaecology"
+ },
+ {
+   "name": "Nipple Discharge",
+   "system": "Gynaecology"
+ },
+ {
+   "name": "Oral Contraceptives",
+   "system": "Gynaecology"
+ },
+ {
+   "name": "Osteoporosis & Osteopenia",
+   "system": "Gynaecology"
+ },
+ {
+   "name": "Premenstrual Dysphoric Disorder",
+   "system": "Gynaecology"
+ },
+ {
+   "name": "Secondary Amenorrhea",
+   "system": "Gynaecology"
+ },
+ {
+   "name": "Urinary Tract Infection in Women",
+   "system": "Gynaecology"
+ },
+ {
+   "name": "Vaginal Bleeding in Pregnancy",
+   "system": "Gynaecology"
+ },
+ {
+   "name": "Vaginal Discharge",
+   "system": "Gynaecology"
+ },
+ {
+   "name": "Abnormal Serum Protein Electrophoresis",
+   "system": "Hematoncology"
+ },
+ {
+   "name": "Anemia",
+   "system": "Hematoncology"
+ },
+ {
+   "name": "Carcinoma of Unknown Primary",
+   "system": "Hematoncology"
+ },
+ {
+   "name": "Chronic Myelogenous Leukemia",
+   "system": "Hematoncology"
+ },
+ {
+   "name": "Classical Hodgkin’s Lymphoma",
+   "system": "Hematoncology"
+ },
+ {
+   "name": "Clinical Considerations for Stem Cell Transplantation",
+   "system": "Hematoncology"
+ },
+ {
+   "name": "Coagulation Abnormalities",
+   "system": "Hematoncology"
+ },
+ {
+   "name": "Deep Venous Thrombosis",
+   "system": "Hematoncology"
+ },
+ {
+   "name": "Late Issues for Cancer Survivors",
+   "system": "Hematoncology"
+ },
+ {
+   "name": "Leukopenia",
+   "system": "Hematoncology"
+ },
+ {
+   "name": "Lymphaedonpathy",
+   "system": "Hematoncology"
+ },
+ {
+   "name": "Neutropenia & Fever",
+   "system": "Hematoncology"
+ },
+ {
+   "name": "Neutrophilia",
+   "system": "Hematoncology"
+ },
+ {
+   "name": "Pathologic Fractures",
+   "system": "Hematoncology"
+ },
+ {
+   "name": "Polycythemia",
+   "system": "Hematoncology"
+ },
+ {
+   "name": "Spinal Cord Compression",
+   "system": "Hematoncology"
+ },
+ {
+   "name": "Superior Vena Caval Syndrome",
+   "system": "Hematoncology"
+ },
+ {
+   "name": "Transfusion Reactions",
+   "system": "Hematoncology"
+ },
+ {
+   "name": "Transfusion Therapy: Fresh Frozen Plasma & Cryoprecipitate",
+   "system": "Hematoncology"
+ },
+ {
+   "name": "Transfusion Therapy: Granulocytes",
+   "system": "Hematoncology"
+ },
+ {
+   "name": "Transfusion Therapy: Platelets",
+   "system": "Hematoncology"
+ },
+ {
+   "name": "Transfusion Therapy: Red Blood Cells",
+   "system": "Hematoncology"
+ },
+ {
+   "name": "Acute & Subacute Meningitis",
+   "system": "Infectology"
+ },
+ {
+   "name": "Aseptic Meningitis",
+   "system": "Infectology"
+ },
+ {
+   "name": "Chronic Meningitis",
+   "system": "Infectology"
+ },
+ {
+   "name": "CNS Infection in HIV",
+   "system": "Infectology"
+ },
+ {
+   "name": "Encephalitis",
+   "system": "Infectology"
+ },
+ {
+   "name": "Fever of Unknown Origin",
+   "system": "Infectology"
+ },
+ {
+   "name": "Foreign Travel: Immunizations & Infections",
+   "system": "Infectology"
+ },
+ {
+   "name": "Newly Diagnosed HIV-positive Patient",
+   "system": "Infectology"
+ },
+ {
+   "name": "Postexposure Prophylaxis",
+   "system": "Infectology"
+ },
+ {
+   "name": "Respiratory Symptoms in HIV-infected Patients",
+   "system": "Infectology"
+ },
+ {
+   "name": "Sepsis",
+   "system": "Infectology"
+ },
+ {
+   "name": "Sexually Transmitted Diseases",
+   "system": "Infectology"
+ },
+ {
+   "name": "Staphylococcus Aureus  Bacteremia",
+   "system": "Infectology"
+ },
+ {
+   "name": "The Acutely Ill Patient With HIV",
+   "system": "Infectology"
+ },
+ {
+   "name": "Toxic Shock Syndromes",
+   "system": "Infectology"
+ },
+ {
+   "name": "Acute Renal Failure",
+   "system": "Nephrology"
+ },
+ {
+   "name": "Chronic Dialysis Modalities",
+   "system": "Nephrology"
+ },
+ {
+   "name": "Chronic Kidney Disease",
+   "system": "Nephrology"
+ },
+ {
+   "name": "Fever in Transplant Recipient",
+   "system": "Nephrology"
+ },
+ {
+   "name": "Hematuria",
+   "system": "Nephrology"
+ },
+ {
+   "name": "Hyperkalemia",
+   "system": "Nephrology"
+ },
+ {
+   "name": "Hypermagnesemia",
+   "system": "Nephrology"
+ },
+ {
+   "name": "Hypernatremia",
+   "system": "Nephrology"
+ },
+ {
+   "name": "Hypokaleimia",
+   "system": "Nephrology"
+ },
+ {
+   "name": "Hypomagnesemia",
+   "system": "Nephrology"
+ },
+ {
+   "name": "Hyponatremia",
+   "system": "Nephrology"
+ },
+ {
+   "name": "Hypophosphatemia",
+   "system": "Nephrology"
+ },
+ {
+   "name": "Kidney Stones",
+   "system": "Nephrology"
+ },
+ {
+   "name": "Metabolic Acidosis",
+   "system": "Nephrology"
+ },
+ {
+   "name": "Metabolic Alkalosis",
+   "system": "Nephrology"
+ },
+ {
+   "name": "Proteinuria",
+   "system": "Nephrology"
+ },
+ {
+   "name": "Renal Cysts & Masses",
+   "system": "Nephrology"
+ },
+ {
+   "name": "Renal Transplantation Selection",
+   "system": "Nephrology"
+ },
+ {
+   "name": "Acute Confusional State",
+   "system": "Neurology"
+ },
+ {
+   "name": "Acute Headache",
+   "system": "Neurology"
+ },
+ {
+   "name": "Acute Stroke",
+   "system": "Neurology"
+ },
+ {
+   "name": "Brain Death",
+   "system": "Neurology"
+ },
+ {
+   "name": "Chronic Behavior Change",
+   "system": "Neurology"
+ },
+ {
+   "name": "Chronic Headache",
+   "system": "Neurology"
+ },
+ {
+   "name": "Coma",
+   "system": "Neurology"
+ },
+ {
+   "name": "Disturbances of Smell & Taste",
+   "system": "Neurology"
+ },
+ {
+   "name": "Dizziness",
+   "system": "Neurology"
+ },
+ {
+   "name": "Gait Disturbances",
+   "system": "Neurology"
+ },
+ {
+   "name": "Hyperkinesias",
+   "system": "Neurology"
+ },
+ {
+   "name": "Memory Loss",
+   "system": "Neurology"
+ },
+ {
+   "name": "Muscle Cramps & Aches",
+   "system": "Neurology"
+ },
+ {
+   "name": "Parkinson’s Disease",
+   "system": "Neurology"
+ },
+ {
+   "name": "Peripheral Neuropathy",
+   "system": "Neurology"
+ },
+ {
+   "name": "Seizures",
+   "system": "Neurology"
+ },
+ {
+   "name": "Status Epilepticus",
+   "system": "Neurology"
+ },
+ {
+   "name": "Stroke Treatment & Prophylaxis",
+   "system": "Neurology"
+ },
+ {
+   "name": "Transient Ischemic Attack & Stroke Evaluation",
+   "system": "Neurology"
+ },
+ {
+   "name": "Transient Monocular Visual Loss",
+   "system": "Neurology"
+ },
+ {
+   "name": "Tremor",
+   "system": "Neurology"
+ },
+ {
+   "name": "Weakness",
+   "system": "Neurology"
+ },
+ {
+   "name": "Acute Visual Loss",
+   "system": "Ophthalmology"
+ },
+ {
+   "name": "Conjunctivitis",
+   "system": "Ophthalmology"
+ },
+ {
+   "name": "Corneal Abrasion",
+   "system": "Ophthalmology"
+ },
+ {
+   "name": "Dilated Pupil",
+   "system": "Ophthalmology"
+ },
+ {
+   "name": "The Red Eye",
+   "system": "Ophthalmology"
+ },
+ {
+   "name": "Hearing Loss",
+   "system": "Otorhinolaryngology"
+ },
+ {
+   "name": "Rhinitis",
+   "system": "Otorhinolaryngology"
+ },
+ {
+   "name": "Tinnitus",
+   "system": "Otorhinolaryngology"
+ },
+ {
+   "name": "Acute Anticoagulation",
+   "system": "Pharmacology"
+ },
+ {
+   "name": "Anaphylaxis",
+   "system": "Pharmacology"
+ },
+ {
+   "name": "Antimicrobial prophylaxis for Surgery",
+   "system": "Pharmacology"
+ },
+ {
+   "name": "Appropriate  Antimicrobial Therapy",
+   "system": "Pharmacology"
+ },
+ {
+   "name": "Evaluation of Adverse Drug  Reactions",
+   "system": "Pharmacology"
+ },
+ {
+   "name": "Long-term Anticoagulation",
+   "system": "Pharmacology"
+ },
+ {
+   "name": "Monitoring Aminoglycosides",
+   "system": "Pharmacology"
+ },
+ {
+   "name": "Serum Drug Level Evaluation",
+   "system": "Pharmacology"
+ },
+ {
+   "name": "Vancomycin Serum Drug Level Evaluation ",
+   "system": "Pharmacology"
+ },
+ {
+   "name": "Asbestos Exposure",
+   "system": "Pulmonology"
+ },
+ {
+   "name": "Asthma",
+   "system": "Pulmonology"
+ },
+ {
+   "name": "Cough",
+   "system": "Pulmonology"
+ },
+ {
+   "name": "Diffuse Interstitial Lung Disease",
+   "system": "Pulmonology"
+ },
+ {
+   "name": "Dyspnea",
+   "system": "Pulmonology"
+ },
+ {
+   "name": "Hemoptysis",
+   "system": "Pulmonology"
+ },
+ {
+   "name": "Mediastinal Lymphadenopathy",
+   "system": "Pulmonology"
+ },
+ {
+   "name": "Multiple Pulmonary Nodules",
+   "system": "Pulmonology"
+ },
+ {
+   "name": "Pleural Effusion",
+   "system": "Pulmonology"
+ },
+ {
+   "name": "Positive Tuberculin Test",
+   "system": "Pulmonology"
+ },
+ {
+   "name": "Raynaud’s Phenomenon",
+   "system": "Pulmonology"
+ },
+ {
+   "name": "Solitary Pulmonary Nodule",
+   "system": "Pulmonology"
+ },
+ {
+   "name": "Stridor",
+   "system": "Pulmonology"
+ },
+ {
+   "name": "Wheezing",
+   "system": "Pulmonology"
+ },
+ {
+   "name": "Antinuclear Antibody Test",
+   "system": "Rheumatology"
+ },
+ {
+   "name": "Diffuse Muscle Pain & Stiffness",
+   "system": "Rheumatology"
+ },
+ {
+   "name": "Dry Eyes & Dry Mouth  ",
+   "system": "Rheumatology"
+ },
+ {
+   "name": "Elevated Creatine Kinase",
+   "system": "Rheumatology"
+ },
+ {
+   "name": "Elevated Serum Alkaline Phosphatase Level",
+   "system": "Rheumatology"
+ },
+ {
+   "name": "Foot Pain",
+   "system": "Rheumatology"
+ },
+ {
+   "name": "Hand & Wrist Pain",
+   "system": "Rheumatology"
+ },
+ {
+   "name": "Hip Pain",
+   "system": "Rheumatology"
+ },
+ {
+   "name": "Hyperuricemia & Gout",
+   "system": "Rheumatology"
+ },
+ {
+   "name": "Joint Hypermobility",
+   "system": "Rheumatology"
+ },
+ {
+   "name": "Knee Pain",
+   "system": "Rheumatology"
+ },
+ {
+   "name": "Low Back Pain",
+   "system": "Rheumatology"
+ },
+ {
+   "name": "Low Bone Density",
+   "system": "Rheumatology"
+ },
+ {
+   "name": "Monoarticular Arthritis",
+   "system": "Rheumatology"
+ },
+ {
+   "name": "Neck Pain",
+   "system": "Rheumatology"
+ },
+ {
+   "name": "Polyarticular Arthritis",
+   "system": "Rheumatology"
+ },
+ {
+   "name": "Scleroderma",
+   "system": "Rheumatology"
+ },
+ {
+   "name": "Seronegative Arthritis",
+   "system": "Rheumatology"
+ },
+ {
+   "name": "Shoulder Pain",
+   "system": "Rheumatology"
+ },
+ {
+   "name": "Soft-tissue Pain",
+   "system": "Rheumatology"
+ },
+ {
+   "name": "Temporomandibular Pain",
+   "system": "Rheumatology"
+ },
+ {
+   "name": "Benign Prostatic Hypertrophy",
+   "system": "Urology"
+ },
+ {
+   "name": "Prostatitis",
+   "system": "Urology"
+ },
+ {
+   "name": "Scrotal Mass",
+   "system": "Urology"
+ },
+ {
+   "name": "Urinary Incontinence",
+   "system": "Urology"
+ },
+ {
+   "name": "Urinary Retention",
+   "system": "Urology"
+ }
 ]
