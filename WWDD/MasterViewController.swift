@@ -32,12 +32,15 @@ class MasterViewController: UIViewController  {
         // 2
         searchController.obscuresBackgroundDuringPresentation = false
         // 3
-        searchController.searchBar.placeholder = "Search Conditions"
+        searchController.searchBar.autoresizesSubviews = true
+        searchController.searchBar.placeholder = "Search medical conditions"
         // 4
         navigationItem.searchController = searchController
         // 5
         definesPresentationContext = true
         
+        // 6 :- Search Controller
+        searchController.searchBar.setScopeBarButtonTitleTextAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 0.0)], for: .init(rawValue: 0))
         searchController.searchBar.scopeButtonTitles = Symptom.System.allCases.map { $0.rawValue }
         searchController.searchBar.delegate = self
         
