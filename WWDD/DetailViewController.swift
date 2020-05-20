@@ -28,7 +28,7 @@ class DetailViewController: UIViewController {
         if let symptom = symptom,
             let detailDescriptionLabel = detailDescriptionLabel {
             detailDescriptionLabel.text = symptom.name
-            //title = symptom.system.rawValue
+            title = symptom.system.rawValue
             //title = symptom.name
         }
     }

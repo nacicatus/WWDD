@@ -31,7 +31,10 @@ class MasterViewController: UIViewController  {
         searchController.searchResultsUpdater = self
         // 2
         searchController.obscuresBackgroundDuringPresentation = false
-        // 3
+        //  Search Bar Text
+        let textFieldInsideSearchBar = searchController.searchBar.value(forKey: "searchField") as? UITextField
+        textFieldInsideSearchBar?.font = textFieldInsideSearchBar?.font?.withSize(12)
+        textFieldInsideSearchBar?.textColor = UIColor.white
         searchController.searchBar.placeholder = "Search medical conditions"
         // 4
         navigationItem.searchController = searchController

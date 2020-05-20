@@ -29,7 +29,6 @@
 		C1BBD1B6244ECC7C00FC4A2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1BBD1B8244ECC7C00FC4A2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1BBD1BE244EE79800FC4A2B /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
-		C1BBD1C0244EE80800FC4A2B /* wwdd.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = wwdd.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C1BBD1C1244EE84F00FC4A2B /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		C1BBD1C3244EF31F00FC4A2B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C1BBD1C5244EFD8C00FC4A2B /* Symptom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symptom.swift; sourceTree = "<group>"; };
@@ -79,7 +78,6 @@
 				C1BBD1B3244ECC7C00FC4A2B /* Assets.xcassets */,
 				C1BBD1B8244ECC7C00FC4A2B /* Info.plist */,
 				C1063AB42451F7B30045DAA1 /* symptoms.json */,
-				C1BBD1C0244EE80800FC4A2B /* wwdd.playground */,
 			);
 			path = WWDD;
 			sourceTree = "<group>";
