@@ -45,12 +45,10 @@ class SearchFooter: UIView {
     }
     
     func hideFooter() {
-//        UIView.animate(withDuration: 0.7, animations: self.center)
         self.alpha = 0.0
     }
     
     func showFooter() {
-//        UIView.animate(withDuration: 0.7, animations: self.center)
         self.alpha = 1.0
     }
     

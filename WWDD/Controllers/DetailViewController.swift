@@ -12,7 +12,7 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var detailDescriptionLabel: UILabel!
     
-    var symptom: Symptom? {
+    var symp: Symptom? {
         didSet {
             configureView()
         }
@@ -25,11 +25,11 @@ class DetailViewController: UIViewController {
     
 
     func configureView() {
-        if let symptom = symptom,
+        if let symptom = symp,
             let detailDescriptionLabel = detailDescriptionLabel {
             detailDescriptionLabel.text = symptom.name
             title = symptom.system.rawValue
-            //title = symptom.name
+   
         }
     }
 

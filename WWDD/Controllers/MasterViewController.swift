@@ -19,36 +19,34 @@ class MasterViewController: UIViewController  {
     
     let searchController = UISearchController(searchResultsController: nil)
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         symptoms = Symptom.symptoms()
-        
-        
-        // 1
+    
+
+        // Search Controller
         searchController.searchResultsUpdater = self
-        // 2
+        searchController.searchBar.delegate = self
         searchController.obscuresBackgroundDuringPresentation = false
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+        
         //  Search Bar Text
+        searchController.searchBar.placeholder = "Search symptoms"
         let textFieldInsideSearchBar = searchController.searchBar.value(forKey: "searchField") as? UITextField
         textFieldInsideSearchBar?.font = textFieldInsideSearchBar?.font?.withSize(12)
         textFieldInsideSearchBar?.textColor = UIColor.white
-        searchController.searchBar.placeholder = "Search medical conditions"
-        // 4
-        navigationItem.searchController = searchController
-        // 5
-        definesPresentationContext = true
-        
-        // 6 :- Search Controller
+    
+
+        // 6 Scope Buttons
         searchController.searchBar.setScopeBarButtonTitleTextAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 0.1)], for: .normal)
         searchController.searchBar.scopeButtonTitles = Symptom.System.allCases.map { $0.rawValue }
-        searchController.searchBar.delegate = self
+        searchController.searchBar.showsScopeBar = false
+
         
+        // Keyboard handling
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(forName: UIResponder.keyboardWillChangeFrameNotification, object: nil, queue: .main) { (notification) in self.handleKeyboard(notification: notification )}
-        notificationCenter.addObserver(forName: UIResponder.keyboardWillChangeFrameNotification, object: nil, queue: .main) { (notification) in self.handleKeyboard(notification: notification)}
         
     }
     
@@ -66,6 +64,9 @@ class MasterViewController: UIViewController  {
         navigationItem.hidesSearchBarWhenScrolling = true
     }
     
+    
+//    Segue
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard
             segue.identifier == "ShowDetailSegue",
@@ -81,8 +82,11 @@ class MasterViewController: UIViewController  {
         } else {
             symptom = symptoms[indexPath.row]
         }
-        detailViewController.symptom = symptom
+        detailViewController.symp = symptom
     }
+    
+    
+//    Searching functions
     
     var isSearchBarEmpty : Bool {
         return searchController.searchBar.text?.isEmpty ?? true
@@ -93,6 +97,8 @@ class MasterViewController: UIViewController  {
         return searchController.isActive && (!isSearchBarEmpty || searchBarScopeIsFiltering)
     }
     
+    
+    // Filter function
     func filterContentForSearchText(_ searchText: String, system: Symptom.System? = nil) {
         filteredSymptoms = symptoms.filter { (symptom: Symptom) -> Bool in
             
@@ -156,19 +162,20 @@ extension MasterViewController: UITableViewDataSource {
 }
 
 extension MasterViewController: UISearchResultsUpdating {
+    
     func updateSearchResults(for searchController: UISearchController) {
         let searchBar = searchController.searchBar
-        let system = Symptom.System(rawValue:
-            searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex])
-        filterContentForSearchText(searchBar.text!, system: system)
+        let sys = Symptom.System(rawValue: searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex])
+        filterContentForSearchText(searchBar.text!, system: sys)
+        
     }
 }
 
 extension MasterViewController: UISearchBarDelegate {
+    
     func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
-        let system = Symptom.System(rawValue:
-            searchBar.scopeButtonTitles![selectedScope])
-        filterContentForSearchText(searchBar.text!, system: system)
+        let sys = Symptom.System(rawValue: searchBar.scopeButtonTitles![selectedScope])
+        filterContentForSearchText(searchBar.text!, system: sys)
     }
 }
 

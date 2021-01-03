@@ -47,6 +47,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C135519C258BA4BC00EFA7C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1BBD1CF244F26EC00FC4A2B /* Main.storyboard */,
+				C1BBD1B5244ECC7C00FC4A2B /* LaunchScreen.storyboard */,
+				C1BBD1C9244F02EA00FC4A2B /* SearchFooter.swift */,
+				C1BBD1B3244ECC7C00FC4A2B /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C135519D258BA4D300EFA7C7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C1BBD1AC244ECC7200FC4A2B /* AppDelegate.swift */,
+				C1063AB42451F7B30045DAA1 /* symptoms.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C135519E258BA4EE00EFA7C7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C1BBD1AE244ECC7200FC4A2B /* MasterViewController.swift */,
+				C1BBD1C3244EF31F00FC4A2B /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C135519F258BA52E00EFA7C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1BBD1C5244EFD8C00FC4A2B /* Symptom.swift */,
+				C1BBD1C1244EE84F00FC4A2B /* Parser.swift */,
+				C1BBD1BE244EE79800FC4A2B /* Gender.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C1BBD1A0244ECC7200FC4A2B = {
 			isa = PBXGroup;
 			children = (
@@ -66,18 +105,11 @@
 		C1BBD1AB244ECC7200FC4A2B /* WWDD */ = {
 			isa = PBXGroup;
 			children = (
-				C1BBD1C5244EFD8C00FC4A2B /* Symptom.swift */,
-				C1BBD1C1244EE84F00FC4A2B /* Parser.swift */,
-				C1BBD1C9244F02EA00FC4A2B /* SearchFooter.swift */,
-				C1BBD1BE244EE79800FC4A2B /* Gender.swift */,
-				C1BBD1AE244ECC7200FC4A2B /* MasterViewController.swift */,
-				C1BBD1C3244EF31F00FC4A2B /* DetailViewController.swift */,
-				C1BBD1AC244ECC7200FC4A2B /* AppDelegate.swift */,
-				C1BBD1CF244F26EC00FC4A2B /* Main.storyboard */,
-				C1BBD1B5244ECC7C00FC4A2B /* LaunchScreen.storyboard */,
-				C1BBD1B3244ECC7C00FC4A2B /* Assets.xcassets */,
 				C1BBD1B8244ECC7C00FC4A2B /* Info.plist */,
-				C1063AB42451F7B30045DAA1 /* symptoms.json */,
+				C135519F258BA52E00EFA7C7 /* Model */,
+				C135519C258BA4BC00EFA7C7 /* View */,
+				C135519E258BA4EE00EFA7C7 /* Controllers */,
+				C135519D258BA4D300EFA7C7 /* Resources */,
 			);
 			path = WWDD;
 			sourceTree = "<group>";
