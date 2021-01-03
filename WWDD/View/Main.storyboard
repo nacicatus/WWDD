@@ -50,11 +50,22 @@
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INa-Av-BO0">
+                                <rect key="frame" x="137" y="238" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="callUpWorkflow:" destination="JEX-9P-axG" eventType="touchUpInside" id="nKn-1x-UBR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="0XM-y9-sOw" secondAttribute="trailing" constant="16" id="KHf-Mi-p1E"/>
                             <constraint firstItem="0XM-y9-sOw" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" id="fik-0l-dOl"/>
+                            <constraint firstItem="INa-Av-BO0" firstAttribute="centerX" secondItem="0XM-y9-sOw" secondAttribute="centerX" id="sMX-9w-4Gh"/>
+                            <constraint firstItem="GAO-Cl-Wes" firstAttribute="top" secondItem="INa-Av-BO0" secondAttribute="bottom" constant="236" id="vBL-EP-7IM"/>
                             <constraint firstItem="0XM-y9-sOw" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" constant="16" id="wa7-6J-8SD"/>
                         </constraints>
                     </view>
@@ -62,11 +73,12 @@
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="mOI-FS-AaM"/>
                     <connections>
                         <outlet property="detailDescriptionLabel" destination="0XM-y9-sOw" id="deQ-Na-JPF"/>
+                        <outlet property="workflowButton" destination="INa-Av-BO0" id="IKM-9Q-Uo7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1021.6" y="-630.13493253373315"/>
+            <point key="canvasLocation" x="1020" y="-630.63380281690138"/>
         </scene>
         <!--Master-->
         <scene sceneID="CWj-zI-HWz">
